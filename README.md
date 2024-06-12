@@ -1,2 +1,2 @@
-# vexerer_clone
+# vexere_clone
 Final Website
