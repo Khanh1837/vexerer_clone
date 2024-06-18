@@ -319,6 +319,7 @@ body {
 /* form chọn thành phố */
 .tinh-thanh-input {
     position: relative;
+
 }
 .thanh-pho-list {
     list-style: none;
@@ -628,6 +629,87 @@ body {
     font-size: 18px !important;
 }
 
+/*Nền tảng kết nối người dùng và nhà xe*/
+.seo-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: row;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.icon-container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.icon-container img {
+    vertical-align: middle;
+    border-style: none ;
+}
+
+.card-content {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.card-content1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card-content2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+}
+
+/*Được nhắc đến*/
+.ant-row {
+    position: relative;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    zoom: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ant-col ant-col-sm-24 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.lazyloaded {
+    width: 120px;
+    width: 120px;
+    margin: 20px;
+}
+
 /*Đăng nhập*/
 .modal-login, .modal-register {
     position: fixed;
@@ -839,4 +921,5 @@ body {
         transform: translate(0%, 0%);
     }
 }
+
 
