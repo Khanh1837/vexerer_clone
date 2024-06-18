@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vé của tôi</title>
+    <title>Nhận xét chuyến đi</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/TrangChu.css">
     <link rel="stylesheet" href="./assets/css/ThongTinTK.css">
-    <link rel="stylesheet" href="./assets/css/VeCuaToi.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
         rel="stylesheet">
     <link rel="shortcut icon" href="https://vexere.com/images/vexere-ico.ico?v=0.0.3" type="image/x-icon">
@@ -89,7 +88,7 @@
             <div style="display: inline-block; margin: 0 6px;">
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
-            <span>Vé của tôi</span>
+            <span>Thông tin tài khoản</span>
         </div>
         <div class="infor-contain">
             <div class="infor-menu">
@@ -98,7 +97,7 @@
                         <div class="icon-contain">
                             <i class="fa-regular fa-user"></i>
                         </div>
-                        <a href="./ThongTinTK.html">Thông tin tài khoản</a>
+                        <a href="./ThongTinTK.html" >Thông tin tài khoản</a>
                     </li>
                     <li class="menu-item">
                         <div class="icon-contain">
@@ -110,7 +109,7 @@
                         <div class="icon-contain">
                             <i class="fa-solid fa-ticket"></i>
                         </div>
-                        <a href="./VeCuaToi.html" class="main-page">Vé của tôi</a>
+                        <a href="./VeCuaToi.html">Vé của tôi</a>
                     </li>
                     <li class="menu-item">
                         <div class="icon-contain">
@@ -128,7 +127,7 @@
                         <div class="icon-contain">
                             <i class="fa-regular fa-comment-dots"></i>
                         </div>
-                        <a href="./Nhanxet.html">Nhận xét chuyến đi</a>
+                        <a href="./Nhanxet.html" class="main-page">Nhận xét chuyến đi</a>
                     </li>
                     <li class="menu-item">
                         <div class="icon-contain">
@@ -138,43 +137,58 @@
                     </li>
                 </ul>
             </div>
-            <div class="ticket-static-contain">
-                <div class="static">
-                    <div class="tab-action active">Hiện tại</div>
-                    <div class="tab-action">Đã đi</div>
-                    <div class="tab-action">Đã hủy</div>
+            <!-- <div class="infor-input">
+                <div class="input-line">
+                    <label for="name">Họ và tên*</label>
+                    <input type="text" name="name" id="input-name" placeholder="Nguyễn Trọng Khánh">
                 </div>
-                <div class="static-wrap">
-                    <div class="slide-static">
-                        <div class="static-content">Bạn chưa có chuyến sắp đi nào, <a href="./BuyTicket.html">đặt vé ngay</a></div>
-                        <!-- <div class="thong-tin-ve-da-dat">
-                            <div class="thong-tin-ve-contain">
-                                <div class="chi-tiet-ve"><h3>22:30</h3></div>
-                                <div class="chi-tiet-ve">Hải Âu</div>
-                                <div class="chi-tiet-ve">Hà Nội - Thái Bình</div>
-                                <div class="chi-tiet-ve">Biển số xe: <b>17B-028.25</b></div>
-                            </div>
-                            <div class="btn-lien-lac-contain">
-                                <div class="btn-lien-lac">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <span>Gọi điện</span>
-                                </div>
-                            </div>
-                            <div class="trang-thai-ve">Chưa thanh toán</div>
-                        </div> -->
+                <div class="input-line">
+                    <label for="sdt">Số điện thoại</label>
+                    <input type="tel" name="sdt" id="input-phone" placeholder="0969157368">
+                </div>
+                <div class="input-line">
+                    <label for="birth">Ngày sinh</label>
+                    <input type="date" name="birth" id="input-birthday" value="2003-07-18">
+                </div>
+                <div class="input-line">
+                    <label for="">Giới tính</label>
+                    <div class="gender-contain">
+                        <div class="gender gender--checked">Nam</div>
+                        <div id="female" class="gender">Nữ</div>
+                        <div class="gender">Khác</div>
                     </div>
                 </div>
+                <div class="btn-line">
+                    <button type="submit" class="btn-save" disabled>Lưu</button>
+                </div> -->
+
+                
             </div>
         </div>
     </div>
 </body>
 
-<script type="module"  src="./js/VeCuaToi.js"></script>
+<script src="TrangChu.js"></script>
 <script>
     // back trang chu
     document.querySelector('.logo').addEventListener('click', function(){
     console.log('ok');
     window.location.href = "TrangChu.html";
     })
+    //Sự kiện Submenu
+    const user = document.querySelector('.user');
+    const subMenu = document.querySelector('.sub-menu');
+
+    user.addEventListener('click', function() {
+        subMenu.classList.toggle('open');
+    });
+    // log out
+    document.querySelector('#logout').addEventListener('click', function(){
+    window.location.href = "index.html";
+    });
+    document.querySelector('#out').addEventListener('click', function(){
+        window.location.href = "index.html";
+    });
 </script>
+
 </html>
