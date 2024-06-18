@@ -1,6 +1,15 @@
 /* header */
+:root {
+    --white-color : #fff;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #2474e5;
+    --border-color: #a1a8b1;
+    --yellow-color : #ffc700;
+}
 #header {
-    background-color: var(--white-color);
+    background-color: var(--primary-color);
     height: 60px;
     display: flex;
     align-items: center;
