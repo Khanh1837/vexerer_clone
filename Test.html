@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+.button {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.security {
+  background-color: #f0fff0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.security-icon {
+  margin-right: 10px;
+}
+
+.security-text {
+  font-size: 14px;
+}
+
+.security-logo {
+  margin-left: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Thẻ ATM nội địa</div>
+  <div class="description">Đảm bảo thẻ đã đăng ký Internet Banking.</div>
+  <button class="button">+ Thêm thẻ mới</button>
+</div>
+
+<div class="container">
+  <div class="header">Thẻ thanh toán quốc tế</div>
+  <div class="description">VISA, MasterCard, JCB</div>
+  <button class="button">+ Thêm thẻ mới</button>
+  <div class="security">
+    <svg class="security-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill"viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 12.354 4.4 9.1 5.976 7.646 7.646 9.1 9.1 7.646 10.354 9.1 8.354 10.354 7.646 12.354Z"/>
+    </svg>
+    <div class="security-text">Thẻ được lưu bởi đối tác đạt chuẩn quốc tế PCI DSS cấp độ cao nhất về Bảo mật thanh toán.</div>
+    <img class="security-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Pci-dss-logo.png/1200px-Pci-dss-logo.png" alt="PCI DSS logo">
+    <div class="security-text">Một khoản phí nhỏ sẽ được khấu trừ để xác minh thông tin thẻ.</div>
+  </div>
+</div>
+
+</body>
+</html>
