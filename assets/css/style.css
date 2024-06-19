@@ -157,7 +157,7 @@ body {
 	position: absolute;
 	background-color: var(--white-color);
 	width: calc(100% - 50px);
-	height: 150px;
+	height: 220px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -168,6 +168,34 @@ body {
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.list-btn-type{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.btn-type{
+	font-size: 17px;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	line-height: 50px;
+	color: rgb(71, 71, 71);
+}
+
+.btn-type:hover{
+	cursor: pointer;
+}
+
+.underline{
+	color: var(--primary-color);
+	border-bottom: 2px solid rgb(36, 116, 229);
+}
+
+.btn-type p{
+	font-weight: 600;
 }
 
 /* Khung Pod */
